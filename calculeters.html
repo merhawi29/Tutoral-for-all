@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>website for calculeters using javascript</title>
+    <link rel="stylesheet" href="stayl-cal.css">
+    <script src="calculeters.js"></script>
+</head>
+<body>
+    <form action=" ">
+        <div>
+            <h1>Calculator</h1>
+            <input type="text" id="textbox" readonly>
+
+        </div>
+        <div class="all">
+            <div>
+            <button id="add" onclick="appendTodisplay('+')" type="button">+</button>
+            <button id="nine" onclick="appendTodisplay('9')" type="button">9</button>
+            <button id="eigh" onclick="appendTodisplay('8')" type="button">8</button>
+            <button id="seve" onclick="appendTodisplay('7')" type="button">7</button>
+            </div>
+            <div>
+             <button id="mul" onclick="appendTodisplay('*')" type="button">*</button>
+             <button id="six" onclick="appendTodisplay('6')" type="button">6</button>
+            <button id="five" onclick="appendTodisplay('5')" type="button">5</button>
+            <button id="four" onclick="appendTodisplay('4')" type="button">4</button>
+            </div>
+            <div>
+                <button id="sub" onclick="appendTodisplay('-')" type="button">-</button>
+                <button id="three" onclick="appendTodisplay('3')" type="button">3</button>
+                <button id="two" onclick="appendTodisplay('2')" type="button">2</button>
+                <button id="three" onclick="appendTodisplay('1')" type="button">1</button>
+            </div>
+            <div>
+                 <button id="div" onclick="appendTodisplay('/')" type="button">/</button>
+                 <button id="two" onclick="appendTodisplay('0')" type="button">0</button>
+                 <button id="three" onclick="appendTodisplay('.')" type="button">.</button>
+                 <button id="equals" onclick="calculater(document.getElementById('textbox'))" type="button">=</button>
+                
+            </div>
+            <div>
+                <button id="clears" onclick="mera()" type="button">C</button>
+            </div>
+        </div>
+        <p id="para"></p>
+    </form>
+</body>
+</html>
